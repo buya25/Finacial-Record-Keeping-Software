@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import eu.hansolo.medusa.Gauge?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane_Reports" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Report_Controller">
+   <children>
+      <Pane layoutX="14.0" layoutY="24.0" prefHeight="148.0" prefWidth="296.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #3643fb; -fx-background-color: #686dac;">
+         <children>
+            <Label layoutX="14.0" layoutY="5.0" text="REVENUE" />
+            <Label layoutX="4.0" layoutY="57.0" prefHeight="38.0" prefWidth="38.0" text="KSHS:" />
+            <Label fx:id="lbl_revenue" layoutX="42.0" layoutY="57.0" prefHeight="38.0" prefWidth="82.0" text="10,000" />
+            <Label fx:id="revenue_percentage" layoutX="136.0" layoutY="57.0" prefHeight="38.0" prefWidth="38.0" text="(+2%)" />
+            <Gauge fx:id="gauge_Revenue" backgroundPaint="#1b1d8600" barEffectEnabled="true" layoutX="174.0" layoutY="48.0" prefHeight="51.0" prefWidth="108.0" skinType="INDICATOR" value="2.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="pane_totalContribution" layoutX="352.0" layoutY="24.0" onMouseReleased="#omr_TotalContribution" prefHeight="148.0" prefWidth="296.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #3643fb; -fx-background-color: #686dac;">
+         <children>
+            <Label layoutX="14.0" layoutY="5.0" text="TOTAL CONTRIBUTION" />
+            <Label fx:id="lbl_totalContribution" layoutX="8.0" layoutY="57.0" prefHeight="38.0" prefWidth="116.0" />
+            <Label fx:id="totalCon_percentage" layoutX="129.0" layoutY="57.0" prefHeight="38.0" prefWidth="38.0" />
+            <Gauge fx:id="gauge_total_contribution" backgroundPaint="#1b1d8600" barEffectEnabled="true" layoutX="174.0" layoutY="49.0" prefHeight="51.0" prefWidth="108.0" skinType="INDICATOR" />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="213.0" prefHeight="148.0" prefWidth="296.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #3643fb; -fx-background-color: #19c4ca;">
+         <children>
+            <Label layoutX="14.0" layoutY="5.0" text="LOAN" />
+            <Label fx:id="lbl_Loan" layoutX="4.0" layoutY="57.0" prefHeight="38.0" prefWidth="123.0" />
+            <Label fx:id="Loan_peercentage" layoutX="129.0" layoutY="57.0" prefHeight="38.0" prefWidth="38.0" />
+            <Label layoutX="4.0" layoutY="111.0" text="Balance">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="loan_Balance" layoutX="67.0" layoutY="113.0" prefHeight="21.0" prefWidth="123.0" text="Kshs: 0" />
+            <Gauge fx:id="loan_Grauge" backgroundPaint="#1b1d8600" barEffectEnabled="true" layoutX="175.0" layoutY="44.0" prefHeight="51.0" prefWidth="108.0" skinType="INDICATOR" />
+         </children>
+      </Pane>
+      <Pane layoutX="359.0" layoutY="213.0" prefHeight="148.0" prefWidth="296.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #3643fb; -fx-background-color: #19c4ca;">
+         <children>
+            <Label layoutX="14.0" layoutY="5.0" text="CURRENT MONTHLY CONTRIBUTION" />
+            <Label fx:id="lbl_MonthlyContribution" layoutX="8.0" layoutY="57.0" prefHeight="38.0" prefWidth="116.0" />
+            <Label fx:id="mc_percentage" layoutX="129.0" layoutY="57.0" prefHeight="38.0" prefWidth="38.0" />
+            <Label layoutX="9.0" layoutY="111.0" text="Balance">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="mc_Balance" layoutX="72.0" layoutY="113.0" prefHeight="21.0" prefWidth="123.0" text="Kshs: 0" />
+            <Gauge fx:id="monthly_contribution_gauge" backgroundPaint="#1b1d8600" barEffectEnabled="true" layoutX="169.0" layoutY="51.0" prefHeight="51.0" prefWidth="108.0" skinType="INDICATOR" />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="403.0" prefHeight="148.0" prefWidth="296.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #3643fb; -fx-background-color: #c1e0f3;">
+         <children>
+            <Label layoutX="14.0" layoutY="5.0" text="LOAN FINE" />
+            <Label fx:id="lbl_loanFine" layoutX="2.0" layoutY="57.0" prefHeight="38.0" prefWidth="123.0" />
+            <Label fx:id="loanFine_Percentage" layoutX="129.0" layoutY="57.0" prefHeight="38.0" prefWidth="38.0" />
+            <Label layoutX="9.0" layoutY="103.0" text="Balance">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="loanFine_balance" layoutX="72.0" layoutY="105.0" prefHeight="21.0" prefWidth="123.0" text="Kshs: 0" />
+            <Gauge fx:id="loanFine_Gauge" backgroundPaint="#1b1d8600" barEffectEnabled="true" layoutX="173.0" layoutY="44.0" prefHeight="51.0" prefWidth="108.0" skinType="INDICATOR" />
+         </children>
+      </Pane>
+      <Pane layoutX="359.0" layoutY="403.0" prefHeight="148.0" prefWidth="296.0" style="-fx-background-radius: 20; -fx-border-radius: 20; -fx-border-color: #3643fb; -fx-background-color: #c1e0f3;">
+         <children>
+            <Label layoutX="14.0" layoutY="5.0" text="MONTHLY CONTRIBUTION FINE" />
+            <Label fx:id="lbl_mcFine" layoutX="7.0" layoutY="57.0" prefHeight="38.0" prefWidth="116.0" />
+            <Label fx:id="mcf_percentage" layoutX="129.0" layoutY="51.0" prefHeight="38.0" prefWidth="38.0" />
+            <Label layoutX="11.0" layoutY="105.0" text="Balance">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="mcf_balance" layoutX="74.0" layoutY="107.0" prefHeight="21.0" prefWidth="123.0" text="Kshs: 0" />
+            <Gauge fx:id="MCF_gauge" backgroundPaint="#1b1d8600" barEffectEnabled="true" layoutX="171.0" layoutY="44.0" prefHeight="51.0" prefWidth="108.0" skinType="INDICATOR" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="ProfileUpdatePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="669.0" style="-fx-background-color: #e2e2e4;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProfileUpdate_Controller">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="lbl_FullName" alignment="CENTER" layoutX="3.0" layoutY="158.0" prefHeight="25.0" prefWidth="193.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Circle fx:id="circle_updatePhoto" fill="#eeebeb" layoutX="100.0" layoutY="81.0" radius="67.0" stroke="WHITE" strokeType="INSIDE" />
+            <Circle fx:id="display_Update" fill="#bfc4c9" layoutX="146.0" layoutY="123.0" radius="19.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Button fx:id="edit_Image" layoutX="126.0" layoutY="105.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="38.0" style="-fx-border-radius: 20; -fx-background-radius: 20; -fx-background-color: transparent;" />
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="247.0" prefHeight="379.0" prefWidth="200.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="lbl_SirName" alignment="CENTER" layoutX="16.0" layoutY="32.0" prefHeight="18.0" prefWidth="172.0" textFill="#4251f8">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="lbl_MiddleName" alignment="CENTER" layoutX="16.0" layoutY="63.0" prefHeight="18.0" prefWidth="172.0" textFill="#4251f8">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="lbl_LastName" alignment="CENTER" layoutX="16.0" layoutY="98.0" prefHeight="18.0" prefWidth="172.0" textFill="#4251f8">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="lbl_IDNumber" alignment="CENTER" layoutX="16.0" layoutY="131.0" prefHeight="18.0" prefWidth="172.0" textFill="#4251f8">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="lbl_DOB" alignment="CENTER" layoutX="16.0" layoutY="165.0" prefHeight="18.0" prefWidth="172.0" textFill="#4251f8">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="lbl_PhoneNumber" alignment="CENTER" layoutX="16.0" layoutY="196.0" prefHeight="18.0" prefWidth="172.0" textFill="#4251f8">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="lbl_PostalCode" alignment="CENTER" layoutX="16.0" layoutY="229.0" prefHeight="18.0" prefWidth="172.0" textFill="#4251f8">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="lbl_Address" alignment="CENTER" layoutX="16.0" layoutY="263.0" prefHeight="18.0" prefWidth="172.0" textFill="#4251f8">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane layoutX="222.0" layoutY="128.0" prefHeight="498.0" prefWidth="443.0" style="-fx-background-color: white;">
+         <children>
+            <TabPane prefHeight="498.0" prefWidth="443.0" style="-fx-background-color: white; -fx-region-background: white; -fx-tab-max-height: 16;" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Profile Details">
+                     <content>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextField fx:id="txt_surName" editable="false" layoutX="21.0" layoutY="44.0" onAction="#on_surName" />
+                              <Text layoutX="21.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sur Name" />
+                              <TextField fx:id="txt_MidName" editable="false" layoutX="239.0" layoutY="43.0" onAction="#on_MidName" />
+                              <Text layoutX="239.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Middle Name" />
+                              <TextField fx:id="txt_LastName" editable="false" layoutX="21.0" layoutY="107.0" onAction="#on_LastName" />
+                              <Text layoutX="21.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name" />
+                              <TextField fx:id="txt_PhoneNumber" editable="false" layoutX="239.0" layoutY="107.0" onAction="#on_PhoneNumber" promptText="+254 717 300 023" />
+                              <Text layoutX="237.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone No." wrappingWidth="74.318359375" />
+                              <DatePicker fx:id="_DOB" editable="false" layoutX="22.0" layoutY="171.0" onAction="#on_DOB" prefHeight="25.0" prefWidth="152.0" promptText="D.O.B" />
+                              <Text layoutX="19.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BirthDay" />
+                              <TextField fx:id="txt_Address" editable="false" layoutX="22.0" layoutY="424.0" onAction="#on_Address" prefHeight="25.0" prefWidth="412.0" />
+                              <Text layoutX="22.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+                              <TextField fx:id="txt_PostalCode" editable="false" layoutX="22.0" layoutY="347.0" onAction="#on_PostalCode" prefHeight="25.0" prefWidth="108.0" />
+                              <Text fill="#616060" layoutX="20.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="25.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Postal/ Zip Code" />
+                              <Text layoutX="148.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country" />
+                              <ComboBox layoutX="135.0" layoutY="347.0" prefWidth="150.0" />
+                              <Text layoutX="301.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City" />
+                              <ComboBox layoutX="292.0" layoutY="347.0" prefHeight="25.0" prefWidth="142.0" />
+                              <Separator layoutY="228.0" prefHeight="0.0" prefWidth="437.0" />
+                              <Text layoutX="238.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID Number" />
+                              <TextField fx:id="txt_IDNumber" editable="false" layoutX="239.0" layoutY="171.0" onAction="#on_IDNumber" />
+                              <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="173.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/editWhite.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="edit_SurName" layoutX="175.0" layoutY="44.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                              <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="388.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/editWhite.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="edit_MiddleName" layoutX="390.0" layoutY="44.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                              <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="174.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/editWhite.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="edit_LastName" layoutX="176.0" layoutY="107.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                              <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="388.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/editWhite.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="edit_PhoneNumber" layoutX="390.0" layoutY="106.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                              <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="175.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/editWhite.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="edit_DOB" layoutX="177.0" layoutY="171.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                              <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="89.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/editWhite.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="edit_Location" layoutX="91.0" layoutY="251.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                              <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="80.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/editWhite.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="edit_Address" layoutX="82.0" layoutY="380.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                              <Label fx:id="warning_surName" layoutX="9.0" layoutY="39.0" textFill="RED">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="warning_lastname" layoutX="9.0" layoutY="102.0" textFill="RED">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="warning_MiddleName" layoutX="228.0" layoutY="36.0" textFill="RED">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="warning_PhoneNumber" layoutX="228.0" layoutY="99.0" textFill="RED">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="warning_PostalCode" layoutX="9.0" layoutY="340.0" textFill="RED">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="warning_Address" layoutX="11.0" layoutY="416.0" textFill="RED">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="warning_BirthDay" layoutX="10.0" layoutY="165.0" textFill="RED">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </content>
+                </Tab>
+                <Tab text="Other">
+                     <content>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text layoutX="11.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+                              <TextArea fx:id="txt_AOB" editable="false" layoutX="22.0" layoutY="355.0" prefHeight="100.0" prefWidth="408.0" />
+                              <Text layoutX="22.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Any other Personal Details" />
+                              <TextField fx:id="txt_Hobies" editable="false" layoutX="11.0" layoutY="106.0" onAction="#on_Hobies" prefHeight="25.0" prefWidth="193.0" />
+                              <Text layoutX="14.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hobbies" />
+                              <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="212.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/editWhite.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="edit_Password" layoutX="212.0" layoutY="42.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                              <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="211.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/editWhite.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="edit_Hobbies" layoutX="213.0" layoutY="106.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                              <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="168.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/editWhite.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="edit_AOB" layoutX="170.0" layoutY="315.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                              <TextField fx:id="txt_Occupation" editable="false" layoutX="11.0" layoutY="170.0" onAction="#on_Occupation" prefHeight="25.0" prefWidth="193.0" />
+                              <Text layoutX="14.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Occupation" />
+                              <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="212.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/editWhite.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="edit_Occupation" layoutX="214.0" layoutY="170.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                              <PasswordField fx:id="txt_Passwotd" editable="false" layoutX="11.0" layoutY="39.0" onAction="#on_Passwotd" onKeyPressed="#pressed_Password" onKeyTyped="#typed_Password" prefHeight="25.0" prefWidth="193.0" />
+                              <ImageView fx:id="img_invisible" fitHeight="25.0" fitWidth="25.0" layoutX="175.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/invisible.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="visible" fitHeight="25.0" fitWidth="25.0" layoutX="175.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="@../controllers/image/see.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btn_checkVisible" layoutX="172.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="31.0" style="-fx-background-color: transparent;" />
+                              <TextField fx:id="txt_Fixed_Amount" editable="false" layoutX="11.0" layoutY="232.0" onAction="#on_Fixed_Amount" prefHeight="25.0" prefWidth="193.0" />
+                              <Text layoutX="14.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fixed Amount" />
+                              <ImageView fitHeight="19.0" fitWidth="23.0" layoutX="213.0" layoutY="235.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/editWhite.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="btn_Fixed_Amount" layoutX="215.0" layoutY="232.0" mnemonicParsing="false" style="-fx-background-color: transparent;" />
+                              <Label fx:id="warning_password" layoutY="31.0" textFill="RED">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="warning_FixedAmount" layoutY="225.0" textFill="RED">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="warning_Occupation" layoutY="163.0" textFill="RED">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="warning_Hobbies" layoutY="100.0" textFill="RED">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="warning_AOB" layoutX="418.0" layoutY="328.0" textFill="RED">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="243.0" layoutY="231.0" prefHeight="90.0" prefWidth="155.0" text="Update the Least Amount&#10; of contribution once to&#10; avoid miscalculations on&#10; the Records Kept&#10;" />
+                           </children>
+                        </Pane>
+                     </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+      <Pane layoutX="221.0" layoutY="13.0" prefHeight="103.0" prefWidth="443.0" style="-fx-background-color: white;">
+         <children>
+            <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Account is Being Verified" wrappingWidth="312.13671875">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text layoutX="20.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you need to update Your Information your required to edit by pressing the icon next " wrappingWidth="300.744140625" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

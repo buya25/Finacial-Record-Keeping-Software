@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.login_Controller">
+    <children>
+    <Pane layoutX="-5.0" layoutY="-6.0" onMouseMoved="#omm_Login" prefHeight="407.0" prefWidth="606.0" style="-fx-background-color: #000000;">
+        <children>
+
+
+
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="4.0" prefHeight="64.0" prefWidth="588.0" text="Login">
+            <textFill>
+                <RadialGradient centerX="0.3388888888888888" centerY="0.5380952380952381" radius="0.5">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color blue="0.41139742732048035" green="0.8552631735801697" red="0.15442252159118652" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color blue="0.7764706015586853" green="1.0" red="0.6470588445663452" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </RadialGradient>
+            </textFill>
+            <font>
+                <Font size="45.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tx_username" accessibleHelp="Username" layoutX="246.0" layoutY="133.0" onKeyReleased="#okp_txtUsername" prefHeight="27.0" prefWidth="316.0" promptText="Email      @gmail.com" style="-fx-border-color: #33f075; -fx-border-radius: 20; -fx-background-radius: 20;" />
+        <PasswordField fx:id="tx_password" accessibleHelp="Password" layoutX="246.0" layoutY="190.0" onKeyReleased="#okr_Passowrd" prefHeight="27.0" prefWidth="316.0" promptText="Password" style="-fx-border-color: #33f075; -fx-background-radius: 20; -fx-border-radius: 20;" />
+        <Button fx:id="btn_login" layoutX="242.0" layoutY="247.0" mnemonicParsing="false" onAction="#on_Login" onMouseMoved="#omm_btnLogin" prefHeight="34.0" prefWidth="323.0" style="-fx-background-color: #33f075; -fx-background-radius: 20; -fx-border-radius: 20;" text="Login">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Button>
+        <Hyperlink fx:id="link_signup" layoutX="432.0" layoutY="307.0" text="Create Account" textFill="#76ff98" />
+        <Text fill="#40e83d" fontSmoothingType="LCD" layoutX="286.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an Account?" wrappingWidth="136.634765625" />
+        <Hyperlink fx:id="link_forgot_password" layoutX="357.0" layoutY="340.0" text="forgot passowrd?" textFill="#f2f2f2" />
+            <ImageView fitHeight="343.0" fitWidth="154.0" layoutX="28.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../controllers/image/lizyaver.jpg" />
+               </image>
+            </ImageView>
+        <Separator layoutX="87.0" layoutY="80.0" prefHeight="1.0" prefWidth="422.0" style="-fx-background-color: #33f075;" />
+            <Hyperlink fx:id="lbl_Cancel" focusTraversable="false" layoutX="573.0" layoutY="4.0" prefHeight="33.0" prefWidth="26.0" text="X" textAlignment="CENTER" textFill="#fff4f4">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Hyperlink>
+            <Label fx:id="lbl_email" layoutX="272.0" layoutY="160.0" prefHeight="17.0" prefWidth="272.0" textFill="#eb3737">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbl_Password" layoutX="269.0" layoutY="219.0" prefHeight="19.0" prefWidth="261.0" textFill="#f23a3a">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+        </children>
+    </Pane>
+    </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>

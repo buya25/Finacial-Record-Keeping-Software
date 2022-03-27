@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <HBox prefHeight="400.0" prefWidth="249.0" style="-fx-background-color: #787878;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="46.0" style="-fx-background-color: #5f5f5f;">
+               <children>
+                  <ImageView fitHeight="38.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../controllers/image/chatmessage.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../controllers/image/Contacts.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../controllers/image/singleContact.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../controllers/image/settings.jpg" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="12.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+            <VBox prefHeight="400.0" prefWidth="203.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="203.0" style="-fx-background-radius: 20; -fx-background-color: #5f5f5f;">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../controllers/image/search..png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField promptText="Search" style="-fx-background-color: transparent;">
+                           <font>
+                              <Font name="Ebrima" size="12.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Pane prefHeight="2.0" prefWidth="200.0" style="-fx-background-color: #5f5f5f;">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Pane>
+                  <ScrollPane hbarPolicy="NEVER" prefHeight="347.0" prefWidth="203.0" style="-fx-background-color: #5f5f5f;" vbarPolicy="NEVER" VBox.vgrow="ALWAYS">
+                     <content>
+                        <VBox prefHeight="344.0" prefWidth="201.0" style="-fx-background-color: #787878;">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="56.0" prefWidth="201.0">
+                                 <children>
+                                    <ImageView fitHeight="59.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../controllers/image/usermale.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="2.0" layoutY="4.0" text="Stacey" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="2.0" layoutY="34.0" prefHeight="17.0" prefWidth="125.0" text="You: Good Morning? I hope you have a wonderful day?" textFill="#c6c5c5" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="56.0" prefWidth="201.0">
+                                 <children>
+                                    <ImageView fitHeight="59.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../controllers/image/usermale.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="2.0" layoutY="4.0" text="Alex" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="2.0" layoutY="34.0" prefHeight="17.0" prefWidth="122.0" text="You: Good Morning? I hope you have a wonderful day?" textFill="#c6c5c5" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="56.0" prefWidth="201.0">
+                                 <children>
+                                    <ImageView fitHeight="59.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../controllers/image/usermale.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="2.0" layoutY="4.0" text="Wayne" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="2.0" layoutY="34.0" prefHeight="17.0" prefWidth="123.0" text="You: Good Morning? I hope you have a wonderful day?" textFill="#c6c5c5" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="56.0" prefWidth="201.0">
+                                 <children>
+                                    <ImageView fitHeight="59.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../controllers/image/usermale.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="2.0" layoutY="4.0" text="Oliver" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="2.0" layoutY="34.0" prefHeight="17.0" prefWidth="120.0" text="You: Good Morning? I hope you have a wonderful day?" textFill="#c6c5c5" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="56.0" prefWidth="201.0">
+                                 <children>
+                                    <ImageView fitHeight="59.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../controllers/image/usermale.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="2.0" layoutY="4.0" text="Thomas" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="2.0" layoutY="34.0" prefHeight="17.0" prefWidth="125.0" text="You: Good Morning? I hope you have a wonderful day?" textFill="#c6c5c5" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="56.0" prefWidth="201.0">
+                                 <children>
+                                    <ImageView fitHeight="59.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../controllers/image/usermale.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="2.0" layoutY="4.0" text="Katumbo" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="2.0" layoutY="34.0" prefHeight="17.0" prefWidth="124.0" text="You: Good Morning? I hope you have a wonderful day?" textFill="#c6c5c5" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="56.0" prefWidth="201.0">
+                                 <children>
+                                    <ImageView fitHeight="59.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../controllers/image/usermale.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="2.0" layoutY="4.0" text="Brian" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="2.0" layoutY="37.0" prefHeight="17.0" prefWidth="138.0" text="You: Good Morning? I hope you have a wonderful day?" textFill="#c6c5c5" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="56.0" prefWidth="201.0">
+                                 <children>
+                                    <ImageView fitHeight="59.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../controllers/image/usermale.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Pane prefHeight="200.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="2.0" layoutY="4.0" text="Cynthia" textFill="WHITE">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="2.0" layoutY="37.0" prefHeight="17.0" prefWidth="138.0" text="You: Good Morning? I hope you have a wonderful day?" textFill="#c6c5c5" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="337.0" style="-fx-background-color: #787878;">
+               <children>
+                  <Label text="Stacey" textFill="#5f5f5f">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Circle fill="#00ff72" radius="4.0" stroke="BLACK" strokeType="INSIDE">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <Label text="Online">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="37.0" prefWidth="221.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../controllers/image/more.jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="290.0" prefWidth="351.0" vbarPolicy="NEVER">
+               <content>
+                  <VBox prefHeight="288.0" prefWidth="351.0">
+                     <children>
+                        <HBox alignment="TOP_RIGHT">
+                           <children>
+                              <Label style="-fx-background-color: #73a4f3; -fx-background-radius: 20;" text="Good Morning Bro?&#10;&#10;&#10;&#10;" textFill="WHITE">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </Label>
+                              <ImageView fitHeight="35.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/ChatUser.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <VBox.margin>
+                              <Insets right="10.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/ChatUser.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label style="-fx-background-color: #5f5f5f; -fx-background-radius: 20;" text="Good Morining to You too?&#10;its been so long ahahahah&#10;&#10;&#10;" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" prefHeight="40.0">
+                           <children>
+                              <Label prefHeight="40.0" style="-fx-background-color: #73a4f3; -fx-background-radius: 20;" text="yeah i know we can organize &#10;and meet. This weekend and&#10;catch up what do you say?&#10;&#10;" textFill="WHITE" HBox.hgrow="ALWAYS">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </Label>
+                              <ImageView fitHeight="35.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/ChatUser.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/ChatUser.jpg" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Label style="-fx-background-color: #5f5f5f; -fx-background-radius: 20;" text="great idea so what we can do,&#10;is just lets find a good place&#10;&#10;&#10;" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT">
+                           <children>
+                              <Label style="-fx-background-color: #73a4f3; -fx-background-radius: 20;" text="leave that to me i know what&#10;to do?&#10;&#10;&#10;" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </Label>
+                              <ImageView fitHeight="35.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/ChatUser.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../controllers/image/ChatUser.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label style="-fx-background-color: #5f5f5f; -fx-background-radius: 20;" text="Okay boss hahaha just let update&#10;me with the info or you will&#10;pin for me the place&#10;*&#10;&#10;&#10;" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets left="10.0" right="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER" style="-fx-background-color: #787878;">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../controllers/image/emoji.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="25.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../controllers/image/attach.jpg" />
+                     </image>
+                  </ImageView>
+                  <TextArea prefHeight="47.0" prefWidth="253.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </HBox.margin>
+                  </TextArea>
+                  <ImageView fitHeight="27.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../controllers/image/sendphoto.jpg" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Hyperlink contentDisplay="RIGHT" text="-" textFill="#363636">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Hyperlink>
+            <Hyperlink contentDisplay="RIGHT" text="X" textFill="#363636">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

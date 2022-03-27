@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox style="-fx-background-color: #606060;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signup.Signup_Controller">
+   <children>
+      <HBox alignment="CENTER_RIGHT" prefHeight="26.0" prefWidth="600.0">
+         <children>
+            <Hyperlink focusTraversable="false" text="-" textFill="#1fd8b9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Hyperlink>
+            <Hyperlink fx:id="btn_Cancel" focusTraversable="false" text="X" textFill="#1fd8b9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Hyperlink>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="61.0" prefWidth="600.0" style="-fx-background-color: #585656;">
+         <children>
+            <Text fill="#1fd8b9" strokeType="OUTSIDE" strokeWidth="0.0" text="SignUp">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Text>
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="35.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="txt_surName" promptText="Sur Name:" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #1fd8b9; -fx-background-color: transaprent; -fx-text-fill: white;">
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt_MiddleName" promptText="Middle Name" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #1fd8b9; -fx-background-color: transaprent; -fx-text-fill: white;">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="warning_surName" prefHeight="17.0" prefWidth="166.0" textFill="#1fd8b9">
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="warning_middleName" prefHeight="17.0" prefWidth="165.0" textFill="#1fd8b9" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <TextField fx:id="txt_lastName" promptText="Last Name:" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #1fd8b9; -fx-background-color: transaprent; -fx-text-fill: white;">
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txt_idNumber" promptText="ID No." style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #1fd8b9; -fx-background-color: transaprent; -fx-text-fill: white;">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="warning_lastname" prefHeight="17.0" prefWidth="166.0" textFill="#1fd8b9">
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="warning_idnumber" prefHeight="17.0" prefWidth="165.0" textFill="#1fd8b9" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <TextField fx:id="txt_gmail" prefHeight="28.0" prefWidth="281.0" promptText="abcd@gmail.com" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #1fd8b9; -fx-background-color: transaprent; -fx-text-fill: white;">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="warning_emailAddress" prefHeight="17.0" prefWidth="283.0" textFill="#1fd8b9">
+               <HBox.margin>
+                  <Insets bottom="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER">
+         <children>
+            <PasswordField fx:id="txt_password" promptText="Password" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: #1fd8b9; -fx-text-fill: white;">
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </PasswordField>
+            <PasswordField fx:id="txt_confrimPassword" promptText="Cofirm Password" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: #1fd8b9; -fx-text-fill: white;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="25.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="warning_Passowrd" prefHeight="17.0" prefWidth="166.0" textFill="#1fd8b9">
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="warning_confirmPassword" prefHeight="17.0" prefWidth="165.0" textFill="#1fd8b9" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #585656;">
+         <children>
+            <Button fx:id="btn_reset" alignment="CENTER" mnemonicParsing="false" onAction="#on_reset" onMouseMoved="#omm_reset" prefHeight="30.0" prefWidth="128.0" style="-fx-background-radius: 20; -fx-background-color: #606060; -fx-border-width: 3; -fx-border-color: #1fd8b9; -fx-border-radius: 70; -fx-background-color: #605f5f;" text="Reset" textFill="#68ffe1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_signUp" alignment="CENTER" mnemonicParsing="false" onAction="#on_signUp" onMouseMoved="#omm_reset" prefHeight="30.0" prefWidth="128.0" style="-fx-background-radius: 20; -fx-background-color: #606060; -fx-border-width: 3; -fx-border-color: #1fd8b9; -fx-border-radius: 70; -fx-background-color: #605f5f;" text="SignUp" textFill="#68ffe1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="600.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Already SignUp?">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Text>
+            <Hyperlink fx:id="link_login" text="Login" textFill="#1fd8b9" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
